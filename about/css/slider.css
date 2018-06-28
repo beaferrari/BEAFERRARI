@@ -1,0 +1,148 @@
+
+.menu {text-decoration: none;
+  color: rgb(90,90,90);
+  transition:0.25s all;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 100% 3% 2% 3%;
+  margin-left: 300px;
+
+  top: 30px;
+
+}
+
+
+.menu:hover {color: rgb(180,180,180);
+  font-size: 1.4em;
+}
+
+h5 { font-size: 100%;
+font-family:sans-serif;
+}
+
+#barra {
+  background-color: white;
+   width:100%;
+  height: 10vh;
+  position: absolute;
+  top: 0%;
+  margin-top: 50px;
+  z-index: 10px;
+
+}
+.barra {
+	background-color: white;
+	 width:220vh;
+	height: 10vh;
+	position: sticky;
+	top: 0%;
+	margin-top: 50px;
+	z-index: 10px;
+
+
+}
+
+.pieces-slider {
+	position: relative;
+	text-align: center;
+	padding: 8rem 0;
+}
+
+.js .pieces-slider {
+	padding: 0;
+}
+
+/* Make all slides absolutes and hide them */
+.js .pieces-slider__slide {
+	position: absolute;
+	right: 100%;
+}
+
+/* Define image dimensions and also hide them */
+.pieces-slider__image {
+	max-width: 600px;
+	max-height: 400px;
+}
+
+.js .pieces-slider__image {
+	visibility: hidden;
+}
+
+/* Hide the titles */
+.js .pieces-slider__text { color: black;
+	background-color: black;
+	text-indent: -9999px;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Canvas with viewport width and height */
+.js .pieces-slider__canvas { color: black;
+	position: relative;
+	left: 15vw;
+	top: -12vh;
+	width: 100vw;
+	height: 100vh;
+	transition: 0.2s opacity;
+}
+
+/* Class for when we resize */
+.pieces-slider__canvas--hidden { color: black;
+	background-color: black;
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+
+/* Navigation buttons */
+.pieces-slider__button {
+	position: absolute;
+	left: 0;
+	top: 35%;
+	width: 100px;
+	height: 100px;
+	margin: -25px 0 0 0;
+	background-color: white;
+	color: rgb(90, 90, 90);
+	font-size: 1.3em;
+	font-family: inherit;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: 0.1s background-color;
+}
+
+.pieces-slider__button:hover {
+	color: rgb(180, 180, 180);
+	opacity: 0.5;
+	font-size: 1em;
+	transition: 0.25s;
+}
+
+.pieces-slider__button--next {
+	left: auto;
+	right: 0;
+	color: rgb(90, 90, 90);
+}
+
+/* Hide the buttons when no JS */
+.no-js .pieces-slider__button {
+	display: none;
+}
+
+/* Media queries with styles for smaller screens */
+@media screen and (max-width: 720px) {
+	.pieces-slider__image {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 55em) {
+	.pieces-slider__canvas {
+		width: 100vw;
+		height: 100vw;
+	}
+	.pieces-slider__button {
+		width: 60px;
+		height: 60px;
+	}
+}
