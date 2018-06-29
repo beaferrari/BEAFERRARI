@@ -6,18 +6,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 html {
-	background: #fff;
+	background: #000;
 }
 
 body {
-	--color-text: black;
-	--color-link: black;
-	--color-link-hover: black;
+	--color-text: white;
+	--color-link: white;
+	--color-link-hover: white;
 	font-family: "Montserrat", sans-serif;
 	min-height: 100vh;
 	color: black;
 	color: black;
-	background: white;
+	background: black;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
@@ -25,7 +25,7 @@ body {
 
 
 .menu {text-decoration: none;
-  color: rgb(90,90,90);
+  color: rgb(255,255,255);
   transition:0.25s all;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
@@ -47,7 +47,7 @@ font-weight: lighter;
 }
 
 #barra {
-  background-color: white;
+  background-color: black;
    width:100%;
   height: 10vh;
   position: absolute;
@@ -57,7 +57,7 @@ font-weight: lighter;
   z-index: 10;}
 
 	.barra {
-	  background-color: white;
+	  background-color: black;
 	   width:220vh;
 	  height: 10vh;
 	  position: sticky;
@@ -70,10 +70,10 @@ font-weight: lighter;
 p {font-family: 'Montserrat', sans-serif; }
 
 	.sezione {
-		margin-top: 38vh;
-		margin-left: 13vw;
+		margin-top: 30vh;
+		margin-left: 10vw;
 		margin-right: 7vw;
-		color: black;
+		color: white;
 		font-family: 'Montserrat', sans-serif;
 	}
 .titolo { font-family: 'Montserrat', sans-serif;
@@ -81,8 +81,9 @@ font-size: 1.2em;
 position: absolute;
 transform: translate(30%, -450%);
 	z-index: 10px;
+	color: white;
 }
-.back { color: black;
+.back { color: white;
 	 font-family: 'Montserrat', sans-serif;
 font-weight: bold;
 font-size: 0.9em;
@@ -93,10 +94,10 @@ transform: translate(450%, -450%);
 }
 	.placeholder {font-size: 0.85em;
 		padding: 5px;
-		color: black; }
+		color: white; }
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	outline: none;
 }
 
